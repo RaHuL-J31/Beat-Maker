@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beat Maker</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
@@ -87,13 +90,28 @@
             <p>Tempo: <span class="tempo-nr">150</span></p>
         </div>
     </div>
+
     <audio src="./sounds/kick-classic.wav" class="kick-sound"></audio>
     <audio src="./sounds/snare-acoustic01.wav" class="snare-sound"></audio>
     <audio src="./sounds/hihat-acoustic01.wav" class="hihat-sound"></audio>
 
+    <!-- for alert message -->
+    <div id="dialog" title="Basic dialog">
+        <p><b>How to use Beat Maker</b></p><br>
+        <ol>
+            <li>Click on the beats and press play button</li>
+            <li>Change the speed by moving Tempo Slider</li>
+            <li>Change audio by selecting music from DropDown</li>
+            <li>Click on mute button to mute a track</li>
+        </ol>
+
+      </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
         integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./app.js"></script>
 </body>
 

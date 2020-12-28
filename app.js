@@ -1,3 +1,14 @@
+$( function() {
+    $( "#dialog" ).dialog({
+        height: 250,
+        width: 350,
+        modal: true,
+        resizable: true,
+    });
+
+  } );
+
+
 class DrumKit {
     constructor() {
         this.pads = document.querySelectorAll(".pad");
